@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Pichart from "../assets/images/Pichart.png";
-import Package from "./Package";
+import Package from "./Package.jsx";
 
 const weeks = [
   {
