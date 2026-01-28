@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "../pages/home";
-import Contact from "../pages/ContactMe";
-import Impact from "../pages/impact";
+import Home from "../pages/Home.jsx";
+import Contact from "../pages/ContactMe.jsx";
+import Impact from "../pages/impact.jsx";
 
 const AppRoutes = () => {
   return (
