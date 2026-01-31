@@ -88,7 +88,7 @@ const LinkedInMakeover = () => {
       </div>
 
       {/* Week Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
+      <div className="grid grid-cols-1 md:px-30 md:grid-cols-2 gap-10 ">
         {weeks.map((week, index) => (
           <motion.div
             key={index}
@@ -110,7 +110,7 @@ const LinkedInMakeover = () => {
       </div>
 
       {/* After 30 Days Section */}
-      <div className="mt-20 flex flex-col md:flex-row items-center gap-12">
+      <div className="mt-20 px-30 flex flex-col md:flex-row items-center gap-12 md:gap-76">
         {/* Left: Text */}
         <div className="flex-1">
           <h2 className="text-3xl text-[#b85c5c] font-bold mb-6">

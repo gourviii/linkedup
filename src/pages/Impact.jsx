@@ -74,6 +74,7 @@ const Impact = () => {
 const elements = [
   {
     id: "01",
+    image: "../../src/assets/6keyelementimg/Pbanner.jpeg",
     title: "Your banner is prime real estate",
     subtitle: "Don't leave it blank! Use it to showcase:",
     list: [
@@ -86,6 +87,7 @@ const elements = [
   },
   {
     id: "02",
+    image: "../../src/assets/6keyelementimg/Pprofile.jpeg",
     title: "Your profile pic should have a clean headshot",
     subtitle: "NOT NECESSARILY FORMAL, JUST GENUINELY YOU",
     list: [
@@ -99,6 +101,7 @@ const elements = [
   },
   {
     id: "03",
+    image: "../../src/assets/6keyelementimg/Aboutimg.jpeg",
     title: "Skip vague words",
     subtitle: "NO 'SEEKING', NO 'ENTHUSIASTS'. SAY WHAT YOU DO.",
     description:
@@ -109,6 +112,7 @@ const elements = [
   },
   {
     id: "04",
+    image: "../../src/assets/6keyelementimg/Featuresimg.jpeg",
     title: "Your About should tell your story",
     subtitle: "SKIP THE BUZZWORDS (WRITE LIKE YOU ACTUALLY TALK!)",
     list: [
@@ -122,6 +126,7 @@ const elements = [
   },
   {
     id: "05",
+    image: "../../src/assets/6keyelementimg/Experienceimg.jpeg",
     title: "Featured posts = your best hits + products",
     description:
       "Add your top posts, portfolio, courses, testimonials, personal website, or even a Google Doc of your best work.",
@@ -136,6 +141,7 @@ const elements = [
   },
   {
     id: "06",
+    image: "../../src/assets/6keyelementimg/experience.jpeg",
     title: "Make your experience section results-driven",
     subtitle: "DON'T JUST LIST DUTIES - SHOWCASE IMPACT!",
     description:
@@ -268,8 +274,12 @@ const elements = [
         </div>
 
         {/* RIGHT VISUAL */}
-        <div className="bg-[#3d3427] rounded-2xl h-64 flex items-center justify-center text-[#9fb3c8] shadow-inner">
-          Visual here
+        <div className="bg-[#3d3427] rounded-2xl h-64 flex items-center justify-center text-[#9fb3c8] shadow-inner overflow-hidden">
+          {item.image ? (
+            <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+          ) : (
+            <span>Visual here</span>
+          )}
         </div>
       </div>
     ))}
@@ -284,21 +294,28 @@ const elements = [
           Real <span className="italic text-[#b85c5c]">Results</span>
         </h2>
 
-        <div className="grid md:grid-cols-4 gap-6 mt-16">
-          {[
-            { images: "../" },
-            { images: "../" },
-            { images: "../" },
-            { images: "../"  }
-          ].map((item, i) => (
-            <div key={i} className="bg-[#141414] p-6 rounded-xl text-center">
-              <div className="w-24 h-24 bg-[#3d3427] rounded-full mx-auto mb-4" >
-                <img src={item.images} alt="" />
-              </div>{/* images div  */}
-           
-          </div>
-          ))}
-        </div>
+<div className="grid md:grid-cols-3 gap-6 mt-16">
+  {[
+    { images: "../../src/assets/realresultsimg/img1.jpeg" },
+    { images: "../../src/assets/realresultsimg/img2.jpeg" },
+    { images: "../../src/assets/realresultsimg/img3.jpeg" },
+    { images: "../../src/assets/realresultsimg/img4.jpeg" },
+    { images: "../../src/assets/realresultsimg/img5.jpeg" },
+    { images: "../../src/assets/realresultsimg/img6.jpeg" },
+  ].map((item, i) => (
+    <div
+      key={i}
+      className="bg-[#141414] rounded-xl overflow-hidden"
+    >
+      <img
+        src={item.images}
+        alt=""
+        className="w-full h-64 p-0 object-cover"
+      />
+    </div>
+  ))}
+</div>
+
 
         <p className="italic text-center mt-10 text-gray-400">
           Your profile could be next.

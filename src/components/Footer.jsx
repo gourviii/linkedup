@@ -62,11 +62,11 @@ const Footer = () => {
     }
   };
   return (
-    <footer className="bg-black overflow-x-hidden text-gray-300 pt-12 pb-6 px-6 md:px-20">
+    <footer className="bg-[#0a0a0a] overflow-x-hidden text-gray-300 pt-12 pb-6 px-6 md:px-20">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-bold text-white">Gourvi Tiwari</h2>
+          <h2 className="text-2xl font-bold text-[#b85c5c]">Gourvi Tiwari</h2>
           <p className="mt-3 text-sm text-gray-400">
             Authority isn’t built by posting more.., It’s built through
             consistent, meaningful conversations.
@@ -74,7 +74,7 @@ const Footer = () => {
 
           {/* socials  */}
           <div className="mt-4">
-            <h3 className="text-lg font-semibold text-white mb-3">Connect</h3>
+            <h3 className="text-lg font-semibold text-[#b85c5c] mb-3">Connect</h3>
             <div className="flex gap-4">
               <a
                 href="https://www.linkedin.com/in/gourvi-tiwari/"
@@ -105,14 +105,14 @@ const Footer = () => {
 
         {/* Links */}
         <div className="max-w-30">
-          <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
+          <h3 className="text-lg font-semibold text-[#b85c5c] mb-3">Quick Links</h3>
       {/* Underline */}
           <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "2.5rem" }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="w-10 h-[2px] bg-blue-500 mb-6"
+            className="w-10 h-[2px] bg-[#b85c5c] mb-6"
           />
           <ul className="space-y-2">
             <li
@@ -162,19 +162,19 @@ const Footer = () => {
 
         <div className=" text-white">
           {/* Heading */}
-          <h3 className="text-xl font-semibold mb-2">Reach Us</h3>
+          <h3 className="text-xl text-[#b85c5c] font-semibold mb-2">Reach Us</h3>
       {/* Underline */}
           <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "2.5rem" }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="w-10 h-[2px] bg-blue-500 mb-6"
+            className="w-10 h-[2px] bg-[#b85c5c] mb-6"
           />
 
           {/* Address */}
           <div className="flex items-start gap-3 mb-5">
-            <FaMapMarkerAlt className="text-blue-500 mt-1" />
+            <FaMapMarkerAlt className="text-[#b85c5c] mt-1" />
             <p className="text-sm text-gray-300">
               Gayatri bihar, House no.17, <br /> Near by Thatipur, Gwalior <br />
               474011
@@ -183,7 +183,7 @@ const Footer = () => {
 
           {/* Email */}
           <div className="flex items-center gap-3 mb-5">
-            <FaEnvelope className="text-blue-500" />
+            <FaEnvelope className="text-[#b85c5c]" />
             <a
               className="text-sm text-gray-300"
               target="_blank"
@@ -195,7 +195,7 @@ const Footer = () => {
 
           {/* Phone */}
           <div className="flex items-center gap-3">
-            <FaPhoneAlt className="text-blue-500" />
+            <FaPhoneAlt className="text-[#b85c5c]" />
             <p className="text-sm text-gray-300">+91 8889824987</p>
           </div>
         </div>
@@ -203,7 +203,7 @@ const Footer = () => {
         <div>
           {/* email connect  */}
           <div className="  rounded-xl w-full max-w-xl">
-            <h2 className="text-white text-xl font-semibold mb-4">
+            <h2 className="text-[#b85c5c] text-xl font-semibold mb-4">
               Stay Updated
             </h2>
          {/* Underline */}
@@ -212,7 +212,7 @@ const Footer = () => {
             whileInView={{ width: "2.5rem" }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="w-10 h-[2px] bg-blue-500 mb-6"
+            className="w-10 h-[2px] bg-[#b85c5c] mb-6"
           />
             <p className="text-[15px] mb-4">Join for leadership insights</p>
 
@@ -234,7 +234,7 @@ const Footer = () => {
                 disabled={loading}
                 target="_blank" 
                 rel="noopener noreferrer"
-                className={`bg-purple-600 hover:bg-purple-700 transition text-white px-6 py-2 rounded-full text-sm whitespace-nowrap flex items-center justify-center gap-2 ${
+                className={`bg-[#b85c5c] hover:bg-[#b85c5c] transition text-white px-6 py-2 rounded-full text-sm whitespace-nowrap flex items-center justify-center gap-2 ${
                   loading ? "opacity-70 cursor-not-allowed" : ""
                 }`}
               >

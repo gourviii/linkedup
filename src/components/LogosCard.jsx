@@ -60,7 +60,7 @@ const LogosCard = () => {
   }, );
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full bg-[#0a0a0a] overflow-hidden">
    <motion.div
         className="flex gap-6 pt-4 pb-4 w-max cursor-grab active:cursor-grabbing"
         style={{ x }}                // 🔥 important

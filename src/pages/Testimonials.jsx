@@ -44,11 +44,11 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="px-6 -mt-20 md:-mt-10 py-20 max-w-7xl mx-auto">
+    <section id="testimonials" className="px-16 text-white bg-[#0a0a0a] -mt-20 md:-mt-10 py-20 max-w-8xl mx-auto">
       {/* Heading */}
       <div className="text-center mt-5 md:mt-10 mb-14">
         <h2 className="text-3xl  md:text-4xl font-bold">
-          Real People, Real <span className="text-blue-500" >Impact</span>
+          Real People, Real <span className="text-[#b85c5c]" >Impact</span>
         </h2>
         {/* Underline */}
           <motion.div
@@ -56,7 +56,7 @@ const Testimonials = () => {
             whileInView={{ width: "8rem" }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="w-36 h-1 bg-blue-500 mx-auto mt-4 rounded-full"
+            className="w-36 h-1 bg-[#b85c5c] mx-auto mt-4 rounded-full"
           />
       </div>
 
@@ -67,7 +67,7 @@ const Testimonials = () => {
             key={index}
             whileHover={{ y: -8 }}
             transition={{ duration: 0.3 }}
-            className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl flex flex-col h-full"
+            className="bg-[#121212] rounded-2xl p-6 shadow-xl hover:shadow-2xl flex flex-col h-full"
           >
             {/* Stars */}
             <div className="flex gap-1 mb-4 text-yellow-400">
@@ -79,7 +79,7 @@ const Testimonials = () => {
             </div>
 
             {/* Quote */}
-            <p className="text-gray-600 italic mb-8">“{item.text}”</p>
+            <p className="text-white italic mb-8">“{item.text}”</p>
 
             {/* Bottom User Info */}
             <div className="flex items-center gap-4 mt-auto">

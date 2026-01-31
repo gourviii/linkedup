@@ -29,27 +29,28 @@ const Hero = () => {
         id="home"
         className="relative bg-[#0a0a0a] overflow-x-hidden w-full h-170 md:h-170 scroll-mt-18 flex flex-col overflow-hidden justify-center items-center px-6 md:px-45"
       >
-        <div className="max-w-5x text-center">
-          <motion.div
+         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h1 className="text-4xl md:text-6xl font-bold max-w-3xl text-white leading-tight">
-              Stop Posting. Start Being Remembered.
-            </h1>
+            <h2 className="text-2xl md:text-6xl font-semibold text-[#b85c5c]  mt-2 mb-3">
+              LinkedIn Personal Brand Strategist
+            </h2>
           </motion.div>
+        <div className="max-w-5x text-center">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl md:text-5xl font-semibold text-[#b85c5c]  mt-2">
-              LinkedIn Personal Brand Strategist
-            </h2>
+            <h1 className="text-4xl md:text-5xl font-bold max-w-3xl text-white leading-tight">
+              Stop Posting. Start Being Remembered.
+            </h1>
           </motion.div>
+   
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -57,7 +58,7 @@ const Hero = () => {
             viewport={{ once: true }}
             className="flex justify-center "
           >
-            <p className="w-100 md:w-140 mt-4 text-white">
+            <p className="w-100 md:w-140 mt-4 text-gray-500">
               Helping coaches, founders, and executives create LinkedIn profiles
               that attract opportunities, build credibility, and grow influence
               effortlessly.
@@ -85,7 +86,7 @@ const Hero = () => {
       <LinkedInMakeover/>
          <Testimonials />
           {/* My client have worked at -  */}
-      <section className="w-full py-16 overflow-hidden bg-gray-50">
+      <section className="w-full py-16 overflow-hidden bg-[#0a0a0a] text-white">
         <h1 className="text-3xl md:text-4xl font-bold text-center ">
           My client have worked at
         </h1>
@@ -95,9 +96,9 @@ const Hero = () => {
             whileInView={{ width: "10rem" }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="w-36 h-1 mb-4 bg-blue-500 mx-auto mt-4 rounded-full"
+            className="w-36 h-1 mb-4 bg-[#b85c5c] mx-auto mt-4 rounded-full"
           />
-       <LogosCard/>
+       <LogosCard />
       </section>
 
   
