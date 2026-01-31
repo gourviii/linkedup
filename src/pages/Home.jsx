@@ -27,7 +27,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative bg-[#0a0a0a] overflow-x-hidden w-full h-200 md:h-200 scroll-mt-18 flex flex-col overflow-hidden justify-center items-center  px-6 md:px-45"
+        className="relative bg-[#0a0a0a] overflow-x-hidden w-full h-200 md:h-200 md:pt-25 scroll-mt-18 flex flex-col overflow-hidden justify-center items-center  px-6 md:px-45"
       >
          <motion.div
             initial={{ opacity: 0 }}
