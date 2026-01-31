@@ -35,7 +35,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl md:text-6xl font-semibold text-[#b85c5c]  mt-2 mb-3">
+            <h2 className="text-2xl md:text-4xl font-semibold text-[#b85c5c]  mt-2 mb-3">
               LinkedIn Personal Brand Strategist
             </h2>
           </motion.div>
