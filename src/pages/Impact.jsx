@@ -74,7 +74,7 @@ const Impact = () => {
 const elements = [
   {
     id: "01",
-    image: "../../public/6keyelementimg/Pbanner.jpeg",
+    image: "/6keyelementimg/Pbanner.jpeg",
     title: "Your banner is prime real estate",
     subtitle: "Don't leave it blank! Use it to showcase:",
     list: [
@@ -87,7 +87,7 @@ const elements = [
   },
   {
     id: "02",
-    image: "../../public/6keyelementimg/Pprofile.jpeg",
+    image: "/6keyelementimg/Pprofile.jpeg",
     title: "Your profile pic should have a clean headshot",
     subtitle: "NOT NECESSARILY FORMAL, JUST GENUINELY YOU",
     list: [
@@ -101,7 +101,7 @@ const elements = [
   },
   {
     id: "03",
-    image: "../../public/6keyelementimg/Aboutimg.jpeg",
+    image: "/6keyelementimg/Aboutimg.jpeg",
     title: "Skip vague words",
     subtitle: "NO 'SEEKING', NO 'ENTHUSIASTS'. SAY WHAT YOU DO.",
     description:
@@ -112,7 +112,7 @@ const elements = [
   },
   {
     id: "04",
-    image: "../../public/6keyelementimg/Featuresimg.jpeg",
+    image: "/6keyelementimg/Featuresimg.jpeg",
     title: "Your About should tell your story",
     subtitle: "SKIP THE BUZZWORDS (WRITE LIKE YOU ACTUALLY TALK!)",
     list: [
@@ -126,7 +126,7 @@ const elements = [
   },
   {
     id: "05",
-    image: "../../public/6keyelementimg/Experienceimg.jpeg",
+    image: "/6keyelementimg/Experienceimg.jpeg",
     title: "Featured posts = your best hits + products",
     description:
       "Add your top posts, portfolio, courses, testimonials, personal website, or even a Google Doc of your best work.",
@@ -141,7 +141,7 @@ const elements = [
   },
   {
     id: "06",
-    image: "../../public/6keyelementimg/experience.jpeg",
+    image: "/6keyelementimg/experience.jpeg",
     title: "Make your experience section results-driven",
     subtitle: "DON'T JUST LIST DUTIES - SHOWCASE IMPACT!",
     description:
@@ -296,12 +296,12 @@ const elements = [
 
 <div className="grid md:grid-cols-3 gap-6 mt-16">
   {[
-    { images: "../../public/realresultsimg/img1.jpeg" },
-    { images: "../../public/realresultsimg/img2.jpeg" },
-    { images: "../../public/realresultsimg/img3.jpeg" },
-    { images: "../../public/realresultsimg/img4.jpeg" },
-    { images: "../../public/realresultsimg/img5.jpeg" },
-    { images: "../../public/realresultsimg/img6.jpeg" },
+    { images: "/realresultsimg/img1.jpeg" },
+    { images: "/realresultsimg/img2.jpeg" },
+    { images: "/realresultsimg/img3.jpeg" },
+    { images: "/realresultsimg/img4.jpeg" },
+    { images: "/realresultsimg/img5.jpeg" },
+    { images: "/realresultsimg/img6.jpeg" },
    
   ].map((item, i) => (
     <div
