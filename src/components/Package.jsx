@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 const Package = () => {
   return (
-    <section id="investment" className="py-16 bg-gray-50">
+    <section id="investment" className="py-16 bg-[#0a0a0a] text-white">
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <span className="inline-block bg-indigo-100 text-indigo-600 px-4 py-1 rounded-full text-sm font-semibold">
+          <span className="inline-block bg-[#b85c5c] text-white px-4 py-1 rounded-full text-sm font-semibold">
             Investment
           </span>
-          <h1 className="text-4xl font-bold mt-4">The Packages</h1>
-          <p className="text-gray-600 mt-2">
+          <h1 className="text-4xl font-bold text-[#b85c5c] mt-4">The Packages</h1>
+          <p className=" text-white mt-2">
             Choose the level of support that matches your growth goals
           </p>
         </div>
@@ -19,7 +19,7 @@ const Package = () => {
         {/* Packages */}
         <div className="grid md:grid-cols-2 gap-8">
           {/* Presence Package */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 border">
+          <div className="bg-[#121212] rounded-2xl shadow-lg p-8 ">
             <h2 className="text-2xl font-bold">Presence Package</h2>
             <p className="text-gray-600 mt-2">
               A done-for-you system to stay consistent, visible, and aligned.
@@ -57,8 +57,8 @@ const Package = () => {
           </div>
 
           {/* Scale Package */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-indigo-600 relative">
-            <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-indigo-600 text-white px-4 py-1 rounded-full text-sm">
+          <div className="bg-[#121212] rounded-2xl shadow-xl p-8 border-2 border-[#b85c5c] relative">
+            <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#b85c5c] text-white px-4 py-1 rounded-full text-sm">
               Most Popular
             </span>
 

@@ -66,7 +66,7 @@ const Services = () => {
       >
         {/* Headline */}
         <div className="text-center mt-5 mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold">Services</h2>
+          <h2 className="text-3xl md:text-4xl text-[#b85c5c] font-bold">Services</h2>
 
           {/* Underline */}
           <motion.div
@@ -74,7 +74,7 @@ const Services = () => {
             whileInView={{ width: "5rem" }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="w-20 h-1 bg-blue-500 mt-3 mb-8 rounded-full mx-auto"
+            className="w-20 h-1 bg-[#b85c5c] mt-3 mb-8 rounded-full mx-auto"
           />
 
           <p className="mt-4 text-2xl text-white">

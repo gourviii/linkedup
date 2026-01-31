@@ -20,7 +20,7 @@ const About = () => {
           <img
             src={AboutGourvi}
             alt="Ownerimg"
-            className="w-95 md:w-250 -mb-40 md:mb-0 rounded-2xl border-b-[6px] border-blue-500"
+            className="w-95 md:w-250 -mb-40 md:mb-0 rounded-2xl border-b-[6px] border-[#b85c5c]"
           />
         </motion.div>
 
@@ -33,7 +33,7 @@ const About = () => {
             viewport={{ once: true }}
             className="text-3xl text-center md:text-start md:text-4xl font-bold"
           >
-            About <span className="text-blue-500">Me</span>
+            About <span className="text-[#b85c5c]">Me</span>
           </motion.h2>
 
           {/* Underline */}
@@ -42,7 +42,7 @@ const About = () => {
             whileInView={{ width: "5rem" }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="h-1 bg-blue-500 mt-3 m-auto md:ml-0 mb-8 rounded-full"
+            className="h-1 bg-[#b85c5c] mt-3 m-auto md:ml-0 mb-8 rounded-full"
           />
 
           {/* Intro Paragraphs */}
@@ -137,15 +137,15 @@ const About = () => {
             </p>
             <br />
             <p className="inline-block text-white px-3 py-1 font-semibold">
-              <span className="bg-blue-500 rounded-3xl p-2 text-white px-3">
+              <span className="bg-[#b85c5c] rounded-3xl p-2 text-white px-3">
                 Authority
               </span>
               <span className="text-3xl font-bold"> → </span>
-              <span className="bg-blue-500 rounded-3xl p-2 text-white px-3">
+              <span className="bg-[#b85c5c] rounded-3xl p-2 text-white px-3">
                 Visibility
               </span>
               <span className="text-3xl font-bold"> → </span>
-              <span className="bg-blue-500 rounded-3xl p-2 text-white px-3">
+              <span className="bg-[#b85c5c] rounded-3xl p-2 text-white px-3">
                 Conversion
               </span>
             </p>
