@@ -3,7 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdClose } from "react-icons/md";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import WebsiteLogo from "../assets/WebsiteLogo.png";
+import WebsiteLogo from "../assets/WebsiteLogo-Photoroom.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -23,50 +23,50 @@ const Navbar = () => {
     <>
       <nav
         className={`navbar md:overflow-hidden shadow-[0_4px_10px_rgba(0,0,0,0.3)]
- bg-white w-full flex items-center justify-between  sm:justify-around  px-4 md:px-8 py-4 md:py-3 sticky top-0 z-50 transition-all duration-300
+ bg-[#0a0a0a] text-white w-full flex items-center justify-between border-b border-gray-800  sm:justify-around  px-4 md:px-8 py-4 md:py-3 sticky top-0 z-50 transition-all duration-300
    "bg-white"`}
       >
         <img className="h-11 w-auto object-contain " src={WebsiteLogo} alt="" />
-        <ul className="  hidden nav-elem text-lg gap-5 lg:gap-8 sm:flex text-black cursor-pointer">
+        <ul className="  hidden nav-elem text-lg gap-5 lg:gap-8 sm:flex cursor-pointer">
           <li
             onClick={() => handleScroll2("home")}
-            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
           >
             Home
           </li>
           <li
             onClick={() => handleScroll2("about")}
-            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
           >
             About
           </li>
           <li
             onClick={() => handleScroll2("services")}
-            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
           >
             Services
           </li>
           <li
             onClick={() => handleScroll2("workwithme")}
-            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
           >
             Framework
           </li>
           <li
             onClick={() => handleScroll2("testimonials")}
-            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
           >
             Testimonials
           </li>
 
           <Link
-            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
             to="/impact"
           >
             Impact
           </Link>
           <Link
-            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
             to="/contact"
           >
             Contact

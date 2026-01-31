@@ -15,7 +15,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="flex justify-center items-center mb-40"
+          className="flex justify-center items-center mb-40 md:mb-0"
         >
           <img
             src={AboutGourvi}

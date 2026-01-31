@@ -156,9 +156,9 @@ const elements = [
 
 
   return (
-    <div className="bg-[#0a0a0a] text-gray-200">
+    <div className="bg-[#0a0a0a] text-gray-200 ">
       {/* HERO */}
-      <section className="min-h-screen flex items-center justify-center text-center px-6">
+      <section className="min-h-screen flex items-center justify-center text-center  md:pt-0 px-6">
         <div className="max-w-5xl">
           <p className="text-xs tracking-[3px] text-gray-400 mb-6">
             PROFILE OPTIMIZATION EXPERT
@@ -193,18 +193,14 @@ const elements = [
             </button>
           </div>
         </div>
+     
       </section>
-
       {/* POSITIONING */}
-      <section className="py-24 px-6 max-w-6xl mx-auto">
+      <section className="py-24 px-6 -mt-40 md:-mt-40 max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-5xl text-white mb-6">
           Your profile is not a decoration.{" "}
           <span className="italic text-[#b85c5c]">It's positioning.</span>
         </h2>
-
-        <p className="text-gray-400 mb-12">
-          Turn your profile into a clear message — not a generic template.
-        </p>
 
         <div className="grid md:grid-cols-3 gap-6 mb-10">
           {["What you do", "Who it's for", "Why you're different"].map(
@@ -224,6 +220,7 @@ const elements = [
           If your profile looks nice but says nothing, it's not working.
         </p>
       </section>
+   
 
       {/* KEY ELEMENTS */}
       <section id="six-keys" className="py-24 px-6 max-w-6xl mx-auto">
