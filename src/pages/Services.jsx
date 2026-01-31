@@ -62,7 +62,7 @@ const Services = () => {
     <>
       <section
         id="services"
-        className="px-4 -mt-30 md:mt-0  py-20 max-w-7xl mx-auto"
+        className="px-4 -mt-30 md:mt-0 bg-[#0a0a0a] text-white py-20 max-w-8xl mx-auto"
       >
         {/* Headline */}
         <div className="text-center mt-5 mb-14">
@@ -77,22 +77,22 @@ const Services = () => {
             className="w-20 h-1 bg-blue-500 mt-3 mb-8 rounded-full mx-auto"
           />
 
-          <p className="mt-4 text-2xl text-gray-600">
+          <p className="mt-4 text-2xl text-white">
             “LinkedIn works better when your message is clear.”
           </p>
-          <p className="mt-2 text-gray-500">
+          <p className="mt-2 text-white">
             Three ways I help you grow on LinkedIn
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-35 lg:grid-cols-3 gap-10 ">
           {services.map((service, index) => (
             <motion.div
               key={index}
               whileHover={{ y: -8 }}
               transition={{ duration: 0.1 }}
-              className="cursor-pointer max-h-120 overflow-y-auto no-scrollbar bg-white rounded-2xl overflow-hidden object-cover shadow-xl hover:shadow-2xl transition"
+              className="cursor-pointer max-h-120 overflow-y-auto no-scrollbar bg-[#121212] rounded-2xl overflow-hidden object-cover shadow-xl hover:shadow-2xl transition"
             >
               <img
                 src={service.image}
@@ -100,17 +100,17 @@ const Services = () => {
                 alt="services"
               />
               <div className="p-6 pb-6 ">
-                <h3 className="text-xl font-bold mb-2 text-blue-500">
+                <h3 className="text-xl font-bold mb-2 text-[#b85c5c]">
                   {service.title}
                 </h3>
 
-                <p className="text-sm text-gray-900 mb-3">{service.subtitle}</p>
+                <p className="text-sm text-white mb-3">{service.subtitle}</p>
 
-                <p className="text-gray-900 mb-5">{service.intro}</p>
+                <p className="text-white mb-5">{service.intro}</p>
 
                 <div className="mb-5">
                   <h4 className="font-semibold mb-2">What I do:</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
+                  <ul className="list-disc pl-5 space-y-1 text-white text-sm">
                     {service.whatIDo.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}

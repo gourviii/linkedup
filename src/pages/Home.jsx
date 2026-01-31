@@ -27,7 +27,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative bg-[#041527] overflow-x-hidden w-full h-170 md:h-170 scroll-mt-18 flex flex-col overflow-hidden justify-center items-center px-6 md:px-45"
+        className="relative bg-[#0a0a0a] overflow-x-hidden w-full h-170 md:h-170 scroll-mt-18 flex flex-col overflow-hidden justify-center items-center px-6 md:px-45"
       >
         <div className="max-w-5x text-center">
           <motion.div
@@ -46,7 +46,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl md:text-5xl font-semibold text-blue-500  mt-2">
+            <h2 className="text-2xl md:text-5xl font-semibold text-[#b85c5c]  mt-2">
               LinkedIn Personal Brand Strategist
             </h2>
           </motion.div>
@@ -57,7 +57,7 @@ const Hero = () => {
             viewport={{ once: true }}
             className="flex justify-center "
           >
-            <p className="w-100 md:w-140 mt-4 text-gray-500">
+            <p className="w-100 md:w-140 mt-4 text-white">
               Helping coaches, founders, and executives create LinkedIn profiles
               that attract opportunities, build credibility, and grow influence
               effortlessly.
@@ -72,7 +72,7 @@ const Hero = () => {
           >
             <div className="flex gap-4 justify-center items-center  mt-6">
               <Link to="/contact">
-                <button className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-sky-100 hover:text-black cursor-pointer transition">
+                <button className="px-6 py-2 bg-[#b85c5c] text-white rounded-lg hover:bg-sky-100 hover:text-black cursor-pointer transition">
                   Let’s Build Your LinkedIn Presence
                 </button>
               </Link>

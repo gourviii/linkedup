@@ -1,6 +1,154 @@
 import React from "react";
 
 const Impact = () => {
+
+  // const elements = [
+  //   {
+  //     id: "01",
+  //     title: "Your banner is prime real estate",
+  //     subtitle: "Don't leave it blank! Use it to showcase:",
+  //     list: [
+  //       "Your expertise or niche",
+  //       "Your personal brand colors",
+  //       "A call-to-action (CTA)",
+  //       "Portfolio highlights or achievements",
+  //     ],
+  //     tip: "Think of it as a billboard for your professional brand",
+  //   },
+  //   {
+  //     id: "02",
+  //     title: "Your profile pic should have a clean headshot",
+  //     subtitle: "NOT NECESSARILY FORMAL, JUST GENUINELY YOU",
+  //     list: [
+  //       "Clear face visibility",
+  //       "Good lighting",
+  //       "Professional background",
+  //       "Warm expression",
+  //       "High resolution",
+  //       "Approachable vibe",
+  //     ],
+  //   },
+  //   {
+  //     id: "03",
+  //     title: "Skip vague words",
+  //     subtitle: "NO 'SEEKING', NO 'ENTHUSIASTS'. SAY WHAT YOU DO.",
+  //     description:
+  //       "Your headline should make someone stop scrolling. Be specific about who you help and what makes you stand out.",
+  //     example:
+  //       "Product Manager | Ex-Google | Helping startups build user-loved products through data-driven strategy",
+  //   },
+  //   {
+  //     id: "04",
+  //     title: "Your About should tell your story",
+  //     subtitle: "SKIP THE BUZZWORDS (WRITE LIKE YOU ACTUALLY TALK!)",
+  //     list: [
+  //       "Start with a hook",
+  //       "Share your journey",
+  //       "Highlight your unique approach",
+  //       "Mention achievements with numbers",
+  //       "End with what you do + how you help",
+  //       "Include a CTA",
+  //     ],
+  //   },
+  //   {
+  //     id: "05",
+  //     title: "Featured posts = your best hits + products",
+  //     list: [
+  //       "High-engagement posts",
+  //       "Case studies or projects",
+  //       "Speaking engagements",
+  //       "Published articles",
+  //       "Certifications or courses",
+  //       "Media mentions",
+  //     ],
+  //   },
+  //   {
+  //     id: "06",
+  //     title: "Make your experience section results-driven",
+  //     subtitle: "DON'T JUST LIST DUTIES - SHOWCASE IMPACT!",
+  //     example:
+  //       "Grew Instagram following from 5K to 50K in 6 months, driving 3x website traffic",
+  //   },
+  // ];
+
+const elements = [
+  {
+    id: "01",
+    title: "Your banner is prime real estate",
+    subtitle: "Don't leave it blank! Use it to showcase:",
+    list: [
+      "Your expertise or niche",
+      "Your personal brand colors",
+      "A call-to-action (CTA)",
+      "Portfolio highlights or achievements",
+    ],
+    tip: "Think of it as a billboard for your professional brand",
+  },
+  {
+    id: "02",
+    title: "Your profile pic should have a clean headshot",
+    subtitle: "NOT NECESSARILY FORMAL, JUST GENUINELY YOU",
+    list: [
+      "Clear face visibility",
+      "Good lighting",
+      "Professional background",
+      "Warm expression",
+      "High resolution",
+      "Approachable vibe",
+    ],
+  },
+  {
+    id: "03",
+    title: "Skip vague words",
+    subtitle: "NO 'SEEKING', NO 'ENTHUSIASTS'. SAY WHAT YOU DO.",
+    description:
+      "Your headline should make someone stop scrolling. Be specific about who you help and what makes you stand out.",
+    example:
+      "Product Manager | Ex-Google | Helping startups build user-loved products through data-driven strategy",
+    format: "[Your Role or Skill] | [Background] | [Your Unique Edge] | [Who You Help]",
+  },
+  {
+    id: "04",
+    title: "Your About should tell your story",
+    subtitle: "SKIP THE BUZZWORDS (WRITE LIKE YOU ACTUALLY TALK!)",
+    list: [
+      "Start with a hook (bold or surprising statement)",
+      "Share your journey authentically",
+      "Highlight your unique approach or philosophy",
+      "Mention achievements with numbers",
+      "End with what you do now + how you help",
+      "Include a clear CTA",
+    ],
+  },
+  {
+    id: "05",
+    title: "Featured posts = your best hits + products",
+    description:
+      "Add your top posts, portfolio, courses, testimonials, personal website, or even a Google Doc of your best work.",
+    list: [
+      "High-engagement posts",
+      "Case studies or projects",
+      "Speaking engagements",
+      "Published articles",
+      "Certifications or courses",
+      "Media mentions",
+    ],
+  },
+  {
+    id: "06",
+    title: "Make your experience section results-driven",
+    subtitle: "DON'T JUST LIST DUTIES - SHOWCASE IMPACT!",
+    description:
+      "Transform boring job descriptions into compelling proof of your capabilities.",
+    example:
+      "Grew Instagram following from 5K to 50K in 6 months, driving 3x website traffic",
+    format: "[Action verb] + [What you did] + [Measurable result]",
+    instead: "Responsible for managing social media",
+    tip: "Use bullet points and include metrics wherever possible",
+  },
+];
+
+
   return (
     <div className="bg-[#0a0a0a] text-gray-200">
       {/* HERO */}
@@ -21,7 +169,14 @@ const Impact = () => {
             <button className="px-10 py-4 rounded-full bg-[#8b5a5a] hover:bg-[#a06868] transition">
               See My Approach
             </button>
-            <button className="px-10 py-4 rounded-full border border-gray-500 hover:bg-[#1a1a1a] transition">
+            <button
+              onClick={() => {
+                document
+                  .getElementById("six-keys")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+              className="px-10 py-4 rounded-full border border-gray-500 hover:bg-[#1a1a1a] transition"
+            >
               The 6 Key Elements
             </button>
           </div>
@@ -47,7 +202,7 @@ const Impact = () => {
                 className="bg-[#3d3427] p-8 rounded-lg border-l-4 border-[#8b5a5a]"
               >
                 <h3 className="text-xl text-white">{item}</h3>
-                <p className="italic text-gray-400">(clearly)</p>
+              <p className="italic text-gray-400">(clearly)</p>   {/*  //paragraph */}
               </div>
             ),
           )}
@@ -59,7 +214,7 @@ const Impact = () => {
       </section>
 
       {/* KEY ELEMENTS */}
-      <section className="py-24 px-6 max-w-6xl mx-auto">
+      <section id="six-keys" className="py-24 px-6 max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl text-white text-center mb-4">
           The <span className="italic text-[#b85c5c]">6 Key Elements</span>
         </h2>
@@ -67,61 +222,60 @@ const Impact = () => {
           Every element of your profile should work together.
         </p>
 
-        {[
-          {
-            num: "01",
-            title: "Your banner is prime real estate",
-            points: ["Expertise", "Brand colors", "CTA", "Achievements"],
-          },
-          {
-            num: "02",
-            title: "Your profile pic should be a clean headshot",
-            points: [
-              "Clear face",
-              "Good lighting",
-              "Professional background",
-              "Warm expression",
-            ],
-          },
-          {
-            num: "03",
-            title: "Skip vague words",
-            points: ["Be specific", "Say who you help", "Show your value"],
-          },
-          {
-            num: "04",
-            title: "Your About should tell your story",
-            points: ["Hook", "Journey", "Achievements", "CTA"],
-          },
-          {
-            num: "05",
-            title: "Featured posts = your best work",
-            points: ["Top posts", "Projects", "Certifications", "Articles"],
-          },
-          {
-            num: "06",
-            title: "Make experience results-driven",
-            points: ["Action verbs", "Metrics", "Impact"],
-          },
-        ].map((el, i) => (
-          <div
-            key={i}
-            className="grid md:grid-cols-2 gap-10 bg-[#141414] p-10 rounded-xl mb-16"
-          >
-            <div>
-              <span className="text-6xl text-[#8b5a5a]">{el.num}</span>
-              <h3 className="text-2xl text-white mb-4">{el.title}</h3>
-              <ul className="list-disc ml-5 space-y-2 text-gray-400">
-                {el.points.map((p, idx) => (
-                  <li key={idx}>{p}</li>
-                ))}
-              </ul>
+      
+<section className="py-24bg-black text-gray-200">
+  <div className="max-w-6xl mx-auto px-6 space-y-16">
+
+    {elements.map((item, index) => (
+      <div
+        key={item.id}
+        className={`grid md:grid-cols-2 gap-12 items-center 
+        bg-gradient-to-r from-[#0f0f0f] to-[#151515] 
+        rounded-2xl p-12 shadow-2xl`}
+      >
+        {/* LEFT TEXT */}
+        <div>
+          <span className="text-6xl font-light text-[#b07a7a] block mb-4">
+            {item.id}
+          </span>
+
+          <h3 className="text-2xl md:text-3xl text-white mb-6">
+            {item.title}
+          </h3>
+
+          {item.list && (
+            <ul className="space-y-3 text-[#9fb3c8]">
+              {item.list.map((point, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="text-[#9fb3c8] mt-1">•</span>
+                  {point}
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {item.subtitle && (
+            <p className="uppercase text-sm text-gray-500 mt-4">
+              {item.subtitle}
+            </p>
+          )}
+
+          {item.example && (
+            <div className="mt-6 p-4 bg-[#1a1a1a] rounded-lg border-l-4 border-[#8b5a5a]">
+              <p className="italic text-gray-300">{item.example}</p>
             </div>
-            <div className="bg-[#3d3427] h-64 rounded-xl flex items-center justify-center text-gray-400">
-              Visual here
-            </div>
-          </div>
-        ))}
+          )}
+        </div>
+
+        {/* RIGHT VISUAL */}
+        <div className="bg-[#3d3427] rounded-2xl h-64 flex items-center justify-center text-[#9fb3c8] shadow-inner">
+          Visual here
+        </div>
+      </div>
+    ))}
+
+  </div>
+</section>
       </section>
 
       {/* RESULTS */}
@@ -131,12 +285,18 @@ const Impact = () => {
         </h2>
 
         <div className="grid md:grid-cols-4 gap-6 mt-16">
-          {["Client 1", "Client 2", "Client 3", "Client 4"].map((c, i) => (
+          {[
+            { images: "../" },
+            { images: "../" },
+            { images: "../" },
+            { images: "../"  }
+          ].map((item, i) => (
             <div key={i} className="bg-[#141414] p-6 rounded-xl text-center">
-              <div className="w-24 h-24 bg-[#3d3427] rounded-full mx-auto mb-4" />
-              <h3 className="text-white">{c}</h3>
-              <p className="text-gray-400">Growth result</p>
-            </div>
+              <div className="w-24 h-24 bg-[#3d3427] rounded-full mx-auto mb-4" >
+                <img src={item.images} alt="" />
+              </div>{/* images div  */}
+           
+          </div>
           ))}
         </div>
 
@@ -222,13 +382,23 @@ const Impact = () => {
 
       {/* CTA */}
       <section className="py-24 text-center">
-        <button className="px-16 py-5 bg-[#8b5a5a] text-white rounded-full hover:bg-[#a06868] transition">
+        <a href="https://topmate.io/gourvi_tiwari/1915104" target="_blank">
+        <button  className="px-16 py-5 bg-[#8b5a5a] text-white rounded-full hover:bg-[#a06868] transition">
           Book a Discovery Call
         </button>
+        </a>
         <p className="italic text-gray-500 mt-4">
           Let’s transform your profile into a powerful personal brand
         </p>
       </section>
+
+
+
+
+
+
+
+
     </div>
   );
 };

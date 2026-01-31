@@ -176,7 +176,7 @@ const Footer = () => {
           <div className="flex items-start gap-3 mb-5">
             <FaMapMarkerAlt className="text-blue-500 mt-1" />
             <p className="text-sm text-gray-300">
-              Gayatri bihar, House no.17, <br /> Near by Thatipur, <br />
+              Gayatri bihar, House no.17, <br /> Near by Thatipur, Gwalior <br />
               474011
             </p>
           </div>
