@@ -80,7 +80,7 @@ const Navbar = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="absolute top-full left-0 w-full text-black  text-center text-[20px] bg-white/90 backdrop-blur-md flex flex-col items-center gap-6 py-6 sm:hidden"
+              className="absolute top-full left-0 w-full text-white  text-center text-[20px] bg-[#0a0a0a]/90 backdrop-blur-md flex flex-col items-center gap-6 py-6 sm:hidden"
             >
               <ul className=" flex flex-col gap-4 cursor-pointer items-center ">
                 <li
@@ -145,7 +145,7 @@ const Navbar = () => {
         {/* Hamburger Button (Mobile) */}
         <button
           onClick={() => setOpen(!open)}
-          className="sm:hidden text-black text-3xl"
+          className="sm:hidden text-white text-3xl"
         >
           {!open ? <RxHamburgerMenu /> : <MdClose />}
         </button>
