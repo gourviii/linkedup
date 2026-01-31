@@ -43,14 +43,14 @@ const Package = () => {
               ))}
             </ul>
 
-            <div className="mt-6 p-4 bg-gray-100 rounded-lg">
+            <div className="mt-6 p-4 bg-[#3d3427] rounded-lg">
               <p className="font-semibold">Best For</p>
-              <p className="text-gray-600">
+              <p className="text-white">
                 Professionals looking for steady growth and clarity
               </p>
             </div>
             <Link to="/contact">
-              <button className="mt-6 w-full bg-indigo-600 text-white py-3 rounded-xl hover:bg-indigo-700 transition">
+              <button className="mt-6 w-full bg-[#b85c5c] text-white py-3 rounded-xl hover:bg-indigo-700 transition">
                 Apply to work together
               </button>
             </Link>
@@ -87,14 +87,14 @@ const Package = () => {
               ))}
             </ul>
 
-            <div className="mt-6 p-4 bg-indigo-50 rounded-lg">
+            <div className="mt-6 p-4 bg-[#3d3427] rounded-lg">
               <p className="font-semibold">Best For</p>
-              <p className="text-gray-600">
+              <p className="text-white">
                 Founders, coaches, consultants building authority
               </p>
             </div>
             <Link to="/contact">
-              <button className="mt-6 w-full bg-indigo-600 text-white py-3 rounded-xl hover:bg-indigo-700 transition">
+              <button className="mt-6 w-full bg-[#b85c5c] text-white py-3 rounded-xl hover:bg-indigo-700 transition">
                 Apply to work together
               </button>
             </Link>
@@ -103,12 +103,12 @@ const Package = () => {
 
         {/* Discovery Call */}
         <a href="https://topmate.io/gourvi_tiwari/1915104" target="_blank">
-          <div className="mt-16 text-center bg-white p-8 rounded-2xl shadow-md">
-            <p className="text-gray-700 mb-4">
+          <div className="mt-16 text-center bg-[#121212] p-8 rounded-2xl shadow-md">
+            <p className="text-white mb-4">
               Not sure which package fits your goals? Book a 20-minute clarity
               call and we’ll decide together.
             </p>
-            <button className="bg-black text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition">
+            <button className="bg-[#b85c5c] text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition">
               Book a discovery call!
             </button>
           </div>
