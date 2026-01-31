@@ -172,9 +172,15 @@ const elements = [
             <strong>do something</strong>.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <button className="px-10 py-4 rounded-full bg-[#8b5a5a] hover:bg-[#a06868] transition">
+         
+            <button  onClick={() => {
+                document
+                  .getElementById("realresults")
+                  .scrollIntoView({ behavior: "smooth" });
+              }} className="px-10 py-4 rounded-full bg-[#8b5a5a] hover:bg-[#a06868] transition">
               See My Approach
             </button>
+           
             <button
               onClick={() => {
                 document
@@ -289,7 +295,7 @@ const elements = [
       </section>
 
       {/* RESULTS */}
-      <section className="py-24 px-6 bg-[#0a0a0a]">
+      <section id="realresults" className="py-24 px-6 bg-[#0a0a0a]">
         <h2 className="text-4xl md:text-5xl text-white text-center mb-4">
           Real <span className="italic text-[#b85c5c]">Results</span>
         </h2>

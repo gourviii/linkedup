@@ -50,7 +50,7 @@ const Package = () => {
               </p>
             </div>
             <Link to="/contact">
-              <button className="mt-6 w-full bg-[#b85c5c] text-white py-3 rounded-xl hover:bg-indigo-700 transition">
+              <button className="mt-6 w-full bg-[#b85c5c] text-white py-3 rounded-xl hover:bg-[#b85c5ccd] transition">
                 Apply to work together
               </button>
             </Link>
@@ -94,7 +94,7 @@ const Package = () => {
               </p>
             </div>
             <Link to="/contact">
-              <button className="mt-6 w-full bg-[#b85c5c] text-white py-3 rounded-xl hover:bg-indigo-700 transition">
+              <button className="mt-6 w-full bg-[#b85c5c] text-white py-3 rounded-xl hover:bg-[#b85c5ccd] transition">
                 Apply to work together
               </button>
             </Link>
@@ -108,7 +108,7 @@ const Package = () => {
               Not sure which package fits your goals? Book a 20-minute clarity
               call and we’ll decide together.
             </p>
-            <button className="bg-[#b85c5c] text-white px-6 py-3 rounded-xl hover:bg-gray-800 transition">
+            <button className="bg-[#b85c5c] text-white px-6 py-3 rounded-xl hover:bg-[#b85c5ccd] transition">
               Book a discovery call!
             </button>
           </div>

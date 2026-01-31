@@ -73,7 +73,7 @@ const Hero = () => {
           >
             <div className="flex gap-4 justify-center items-center  mt-6">
               <Link to="/contact">
-                <button className="px-6 py-2 bg-[#b85c5c] text-white rounded-lg hover:bg-sky-100 hover:text-black cursor-pointer transition">
+                <button className="px-6 py-2 bg-[#b85c5c]  text-white rounded-lg hover:bg-[#b85c5ccd]  cursor-pointer transition">
                   Let’s Build Your LinkedIn Presence
                 </button>
               </Link>
