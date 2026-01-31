@@ -66,7 +66,7 @@ const Footer = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-bold text-[#b85c5c]">Gourvi Tiwari</h2>
+          <h2 className="text-2xl font-bold text-[#b85c5c]">LinkedUp</h2>
           <p className="mt-3 text-sm text-gray-400">
             Authority isn’t built by posting more.., It’s built through
             consistent, meaningful conversations.

@@ -27,7 +27,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative bg-[#0a0a0a] overflow-x-hidden w-full h-170 md:h-170 scroll-mt-18 flex flex-col overflow-hidden justify-center items-center px-6 md:px-45"
+        className="relative bg-[#0a0a0a] overflow-x-hidden w-full h-200 md:h-200 scroll-mt-18 flex flex-col overflow-hidden justify-center items-center  px-6 md:px-45"
       >
          <motion.div
             initial={{ opacity: 0 }}
@@ -71,7 +71,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 1.9 }}
             viewport={{ once: true }}
           >
-            <div className="flex gap-4 justify-center items-center  mt-6">
+            <div className="flex gap-4 justify-center items-center  mt-6 ">
               <Link to="/contact">
                 <button className="px-6 py-2 bg-[#b85c5c]  text-white rounded-lg hover:bg-[#b85c5ccd]  cursor-pointer transition">
                   Let’s Build Your LinkedIn Presence
@@ -79,6 +79,12 @@ const Hero = () => {
               </Link>
             </div>
           </motion.div>
+        </div>
+        <div className="text-2xl md:text-4xl font-bold max-w-3xl text-center py-20 md:pt-40 -mb-20 text-white leading-tight"> 
+           <p>
+             <i> "Authority isn’t built by posting more.., It’s built through 
+              consistent, meaningful conversations."</i>
+            </p>
         </div>
       </section>
       <About />

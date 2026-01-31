@@ -53,10 +53,10 @@ const About = () => {
             viewport={{ once: true }}
             className="max-w-4xl space-y-6 text-[18px] text-white"
           >
-            <p>
+            {/* <p>
               Authority isn’t built by posting more.., It’s built through
               consistent, meaningful conversations.
-            </p>
+            </p> */}
 
             <p>
               I’m{" "}

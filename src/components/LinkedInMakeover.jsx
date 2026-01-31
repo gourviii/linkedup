@@ -110,17 +110,17 @@ const LinkedInMakeover = () => {
       </div>
 
       {/* After 30 Days Section */}
-      <div className="mt-20 md:px-30 flex flex-col md:flex-row items-center gap-12 md:gap-76">
+      <div className="mt-20 md:px- flex justify-center text-center ">
         {/* Left: Text */}
-        <div className="flex-1">
+        <div >
           <h2 className="text-3xl text-[#b85c5c] font-bold mb-6">
             After 30 Days, You’ll Have
           </h2>
 
-          <ul className="list-disc pl-5 space-y-3 text-white mb-6">
-            <li>A clear, optimized LinkedIn profile</li>
-            <li>Confidence to post consistently</li>
-            <li>Stronger engagement and visibility</li>
+          <ul className="list-disc space-y-3 list-none text-white mb-6">
+            <li> <span className="text-blue-500">✔</span> A clear, optimized LinkedIn profile</li>
+            <li> <span className="text-blue-500">✔</span> Confidence to post consistently</li>
+            <li> <span className="text-blue-500">✔</span> Stronger engagement and visibility</li>
           </ul>
 
           <p className="italic text-lg font-medium text-white">
@@ -129,11 +129,11 @@ const LinkedInMakeover = () => {
         </div>
 
         {/* Right: Framework Image Placeholder */}
-        <div className="flex-1 flex justify-center">
-          <div className="w-[300px] h-[220px] bg-gray-100 rounded-xl flex items-center justify-center text-gray-400">
+        {/* <div className="flex-1 flex justify-center"> */}
+          {/* <div className="w-[300px] h-[220px] bg-gray-100 rounded-xl flex items-center justify-center text-gray-400">
             <img src={Pichart} alt="" />
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </section>
     <Package/>
