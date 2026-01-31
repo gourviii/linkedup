@@ -110,7 +110,7 @@ const LinkedInMakeover = () => {
       </div>
 
       {/* After 30 Days Section */}
-      <div className="mt-20 px-30 flex flex-col md:flex-row items-center gap-12 md:gap-76">
+      <div className="mt-20 md:px-30 flex flex-col md:flex-row items-center gap-12 md:gap-76">
         {/* Left: Text */}
         <div className="flex-1">
           <h2 className="text-3xl text-[#b85c5c] font-bold mb-6">

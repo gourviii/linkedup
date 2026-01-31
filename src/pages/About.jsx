@@ -8,7 +8,7 @@ const About = () => {
         id="about"
         className="overflow-x-hidden bg-[#0a0a0a] text-white "
       >
-        <div className="px-34 py-16 mx-auto md:flex gap-16 ">
+        <div className="md:px-34 py-16 mx-auto md:flex gap-16 ">
         {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
@@ -24,7 +24,7 @@ const About = () => {
           />
         </motion.div>
 
-        <div className="flex flex-col py-16 mt-20">
+        <div className="flex flex-col py-16 px-4 mt-20">
           {/* Heading */}
           <motion.h2
             initial={{ opacity: 0, y: 30 }}

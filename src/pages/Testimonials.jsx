@@ -44,7 +44,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="px-16 text-white bg-[#0a0a0a] -mt-20 md:-mt-10 py-20 max-w-8xl mx-auto">
+    <section id="testimonials" className=" px-6 md:px-16  text-white bg-[#0a0a0a] -mt-20 md:-mt-10 py-20 max-w-8xl mx-auto">
       {/* Heading */}
       <div className="text-center mt-5 md:mt-10 mb-14">
         <h2 className="text-3xl  md:text-4xl font-bold">

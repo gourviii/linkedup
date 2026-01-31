@@ -236,12 +236,12 @@ const elements = [
 
       
 <section className="py-24bg-black text-gray-200">
-  <div className="max-w-6xl mx-auto px-6 space-y-16">
+  <div className="max-w-6xl mx-auto px-0 md:px-6 space-y-16">
 
     {elements.map((item, index) => (
       <div
         key={item.id}
-        className={`grid md:grid-cols-2 gap-12 items-center 
+        className={`grid md:grid-cols-2  gap-12 items-center 
         bg-gradient-to-r from-[#0f0f0f] to-[#151515] 
         rounded-2xl p-12 shadow-2xl`}
       >
