@@ -136,7 +136,7 @@ const About = () => {
               “Powered by the AVC Framework..,
             </p>
             <br />
-            <p className="inline-block text-white px-3 py-1 font-semibold">
+            <div className="inline-block text-white px-0 py-1 font-semibold text-[14px] md:text-[16px]">
               <span className="bg-[#b85c5c] rounded-3xl p-2 text-white px-3">
                 Authority
               </span>
@@ -148,7 +148,7 @@ const About = () => {
               <span className="bg-[#b85c5c] rounded-3xl p-2 text-white px-3">
                 Conversion
               </span>
-            </p>
+            </div>
             <br />
             <p className="inline-block text-white py-1 font-bold">
               “Build trust first, get seen next, and convert naturally.”

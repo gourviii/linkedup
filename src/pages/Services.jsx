@@ -3,6 +3,7 @@ import Image2 from "../assets/images/Contantcreation.jpeg";
 import Image3 from "../assets/images/managment.gif";
 import Image1 from "../assets/images/optimization.png";
 import "../../src/index.css";
+import { useState } from "react";
 
 const services = [
   {
@@ -58,6 +59,8 @@ const services = [
 ];
 
 const Services = () => {
+  const [activeCard, setActiveCard] = useState(null);
+
   return (
     <>
       <section
@@ -66,7 +69,9 @@ const Services = () => {
       >
         {/* Headline */}
         <div className="text-center mt-5 mb-14">
-          <h2 className="text-3xl md:text-4xl text-[#b85c5c] font-bold">Services</h2>
+          <h2 className="text-3xl md:text-4xl text-[#b85c5c] font-bold">
+            Services
+          </h2>
 
           {/* Underline */}
           <motion.div
@@ -89,10 +94,13 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 md:px-35 lg:grid-cols-3 gap-10 ">
           {services.map((service, index) => (
             <motion.div
+              onClick={() => setActiveCard(activeCard === index ? null : index)}
               key={index}
               whileHover={{ y: -8 }}
               transition={{ duration: 0.1 }}
-              className="cursor-pointer max-h-120 overflow-y-auto no-scrollbar bg-[#121212] rounded-2xl overflow-hidden object-cover shadow-xl hover:shadow-2xl transition"
+              className={`cursor-pointer bg-[#121212] rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300
+              ${activeCard === index ? "max-h-full" : "max-h-98 md:max-h-110 overflow-hidden"}
+              `}
             >
               <img
                 src={service.image}
@@ -119,7 +127,7 @@ const Services = () => {
 
                 <div>
                   <h4 className="font-semibold mb-2">Results clients see:</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
+                  <ul className="list-disc pl-5 space-y-1 text-white text-sm">
                     {service.results.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}
