@@ -101,7 +101,7 @@ const elements = [
   },
   {
     id: "03",
-    image: "/6keyelementimg/Aboutimg.jpeg",
+    image: "",
     title: "Skip vague words",
     subtitle: "NO 'SEEKING', NO 'ENTHUSIASTS'. SAY WHAT YOU DO.",
     description:
@@ -112,7 +112,8 @@ const elements = [
   },
   {
     id: "04",
-    image: "/6keyelementimg/Featuresimg.jpeg",
+    image: "/6keyelementimg/Aboutimg.jpeg",
+
     title: "Your About should tell your story",
     subtitle: "SKIP THE BUZZWORDS (WRITE LIKE YOU ACTUALLY TALK!)",
     list: [
@@ -126,7 +127,8 @@ const elements = [
   },
   {
     id: "05",
-    image: "/6keyelementimg/Experienceimg.jpeg",
+    image: "/6keyelementimg/Featuresimg.jpeg",
+
     title: "Featured posts = your best hits + products",
     description:
       "Add your top posts, portfolio, courses, testimonials, personal website, or even a Google Doc of your best work.",
@@ -141,7 +143,8 @@ const elements = [
   },
   {
     id: "06",
-    image: "/6keyelementimg/experience.jpeg",
+    image: "/6keyelementimg/Experienceimg.jpeg",
+
     title: "Make your experience section results-driven",
     subtitle: "DON'T JUST LIST DUTIES - SHOWCASE IMPACT!",
     description:
